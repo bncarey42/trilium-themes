@@ -12,7 +12,7 @@ Themes for the [trilium](https://github.com/zadam/trilium) note app by [zadam](h
 
 ### Fonts
 Fonts in trilium are stored in the .woff2 format and in the notes table in the document have a mime type of "<<<???application/octet stream???>>> rather than '<<<???file/ttf???>>>'
-1. All the fonts I've used are avalible to download at [Google Fonts](fonts.google.com) in .ttf format 
+1. All the fonts I've used are avalible to download at [Google Fonts](https://fonts.google.com) in .ttf format 
 2. Convert the `.ttf` to `.woff2` I used [Google's woff2](https://github.com/google/woff2). 
 3. Drag and drop converted font into trilium 
 4. Update its mime type in the document. To do this you'll need the font's noteID. Open the options menu and choose "<<<???Querry SQL database???>>>" and execute the following update statement:
