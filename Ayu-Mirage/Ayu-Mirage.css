@@ -1,1 +1,49 @@
+@font-face { /* This will be used as main UI fon
+  font-family: 'Roboto-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/custom/fonts/Roboto.woff2') format(
+}
 
+body.theme-ayu-mirage {
+    --main-font-family: 'Roboto-Regular' !import
+    --main-font-size: normal;
+    --tree-font-family: inherit;
+    --tree-font-size: normal;
+    --detail-font-family: inherit;
+    --detail-font-size: normal;
+    --detail-text-font-family: 'Roboto-Regular'
+
+    --main-background-color: #1f2430;
+    --main-text-color: #cbccc6;
+    --main-border-color: #cbccc6;
+    --accented-background-color: #191e2a;
+    --more-accented-background-color: #34455a;
+    --header-background-color: #191e2a;
+    --button-background-color: #34455a;
+    --button-disabled-background-color: #1f2430;
+    --button-border-color: #ffcc664d;
+    --button-text-color: #cbccc6;
+    --button-border-radius: 2px;
+    --muted-text-color: #707a8c;
+    --input-text-color: #cbccc6;
+    --input-background-color: #1f2430;
+    --modal-background-color: #1f2430;
+    --hover-item-text-color: #191e2a;
+    --hover-item-background-color: #a6cc70;
+    --active-item-text-color: #191e2a;
+    --active-item-background-color: #a6cc70;
+    --menu-text-color: #cbccc6;
+    --menu-background-color: #191e2a;
+  }
+  body a { color: #a6cc70; }
+body a:hover { color: #77a8d9; }
+
+/*body.theme-ayu-mirage #note-detail-text {
+    font-size: 120%; /* Garamond is subjectively
+}*/
+
+body.theme-ayu-mirage .CodeMirror {
+    filter: invert(100%) hue-rotate(180deg);
+}
+  
