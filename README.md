@@ -4,14 +4,17 @@ Themes for the [trilium](https://github.com/zadam/trilium) note app by [zadam](h
 * __Ayu-Mirage__ - based on [Ayu](https://github.com/ayu-theme/ayu-colors) by [ayu-theme](https://github.com/ayu-theme)
 * __*COMING SOON*__ __Gruvbox__ - based on [Gruvbox](https://github.com/morhetz/gruvbox) by [morhetz](https://github.com/morhetz)
 
+For more info on theming trilium see the [trilium wiki article on theming](https://github.com/zadam/trilium/wiki/Themes).
+
 ## "Installation"/Use steps
 1. Clone this repo locally
-2. Drag and Drop the .css files into trilium 
-3. If you want the fonts used in the themes see the [font](https://github.com/bncarey42/trilium-themes/blob/master/README.md#fonts) instructions below 
-4. Enable the theme in your options menu under the appearance tab.
+2. Drag and Drop / Import the .css files into trilium ensure that it is created as a `CSS Code note`
+3. Update the new note's attributes to include the `appTheme` lable
+4. If you want the fonts used in the themes see the [font](https://github.com/bncarey42/trilium-themes/blob/master/README.md#fonts) instructions below 
+5. Enable the theme in your options menu under the appearance tab.
 
 ### Fonts
-Fonts in trilium are stored in the .woff2 format and in the notes table in the document have a mime type of "<<<???application/octet stream???>>> rather than '<<<???file/ttf???>>>'
+Fonts in trilium are stored in the .woff2 format and in the notes table in the document have a mime type of `'<<<???application/octet stream???>>>'` rather than `'<<<???file/ttf???>>>'`. To define custom fonts trilium uses a [custom request handler](https://github.com/zadam/trilium/wiki/Custom-request-handler). These instruction are how I've found to get fonts to work.
 1. All the fonts I've used are avalible to download at [Google Fonts](https://fonts.google.com) in .ttf format 
 2. Convert the `.ttf` to `.woff2` I used [Google's woff2](https://github.com/google/woff2). 
 3. Drag and drop converted font into trilium 
