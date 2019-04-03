@@ -7,7 +7,7 @@ Themes for the [trilium](https://github.com/zadam/trilium) note app by [zadam](h
 ## "Installation"/Use steps
 1. Clone this repo locally
 2. Drag and Drop the .css files into trilium 
-3. If you want the fonts used in the themes see the [font]() instructions below 
+3. If you want the fonts used in the themes see the [font](https://github.com/bncarey42/trilium-themes/blob/master/README.md#fonts) instructions below 
 4. Enable the theme in your options menu under the appearance tab.
 
 ### Fonts
