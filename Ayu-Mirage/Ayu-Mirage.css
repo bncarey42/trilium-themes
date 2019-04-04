@@ -1,18 +1,32 @@
-@font-face { /* This will be used as main UI fon
+/*
+ * This is a demo of how you can create custom theme for Trilium. You can activate it by going
+ * into options (top-right corner) in first tab "Appearance".
+ *
+ * You can read some details on theming here: http://github.com/zadam/trilium/wiki/Themes
+ */
+
+@font-face { 
+  font-family: 'Merriweather-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/custom/fonts/Merriweather.woff2') format('woff2');
+}
+
+@font-face { 
   font-family: 'Roboto-Regular';
   font-style: normal;
   font-weight: 400;
-  src: url('/custom/fonts/Roboto.woff2') format(
+  src: url('/custom/fonts/Roboto.woff2') format('woff2');
 }
 
 body.theme-ayu-mirage {
-    --main-font-family: 'Roboto-Regular' !import
+    --main-font-family: 'Roboto-Regular' !important;
     --main-font-size: normal;
     --tree-font-family: inherit;
     --tree-font-size: normal;
     --detail-font-family: inherit;
     --detail-font-size: normal;
-    --detail-text-font-family: 'Roboto-Regular'
+    --detail-text-font-family: 'Merriweather-Regular' !important;
 
     --main-background-color: #1f2430;
     --main-text-color: #cbccc6;
@@ -35,15 +49,14 @@ body.theme-ayu-mirage {
     --active-item-background-color: #a6cc70;
     --menu-text-color: #cbccc6;
     --menu-background-color: #191e2a;
-  }
-  body a { color: #a6cc70; }
-body a:hover { color: #77a8d9; }
+}
 
-/*body.theme-ayu-mirage #note-detail-text {
-    font-size: 120%; /* Garamond is subjectively
-}*/
+body a { color: #a6cc70; }
+body a:hover { color: #77a8d9; }
+body.theme-ayu-mirage #note-detail-text {
+    font-size: 75%; 
+}
 
 body.theme-ayu-mirage .CodeMirror {
     filter: invert(100%) hue-rotate(180deg);
 }
-  
