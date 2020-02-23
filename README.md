@@ -4,7 +4,7 @@ Themes for the [trilium](https://github.com/zadam/trilium) note app by [zadam](h
 * __Ayu-Mirage__ - based on [Ayu](https://github.com/ayu-theme/ayu-colors) by [ayu-theme](https://github.com/ayu-theme)
 * __Darkasher__ - a little something I threw together on a Sunday morning
 
-For more info on theming trilium see the [trilium wiki article on theming](https://github.com/zadam/trilium/wiki/Themes).
+For more info on theming trilium see the [trilium wiki](https://github.com/zadam/trilium/wiki/Themes).
 
 ## "Installation"/Use steps
 1. Clone this repo locally
