@@ -2,7 +2,7 @@
 Themes for the [trilium](https://github.com/zadam/trilium) note app by [zadam](https://github.com/zadam/trilium)
 
 * __Ayu-Mirage__ - based on [Ayu](https://github.com/ayu-theme/ayu-colors) by [ayu-theme](https://github.com/ayu-theme)
-* __*COMING SOON*__ __Gruvbox__ - based on [Gruvbox](https://github.com/morhetz/gruvbox) by [morhetz](https://github.com/morhetz)
+* __Darkasher__ - a little something I threw together on a Sunday morning
 
 For more info on theming trilium see the [trilium wiki article on theming](https://github.com/zadam/trilium/wiki/Themes).
 
@@ -14,12 +14,11 @@ For more info on theming trilium see the [trilium wiki article on theming](https
 5. Enable the theme in your options menu under the appearance tab.
 
 ### Fonts
-Fonts in trilium are stored in the .woff2 format and in the notes table in the document have a mime type of `'application/octet-stream'` rather than `'<<<???file/ttf???>>>'`. To define custom fonts trilium uses a [custom request handler](https://github.com/zadam/trilium/wiki/Custom-request-handler). These instruction are how I've found to get fonts to work.
-1. All the fonts I've used are avalible to download at [Google Fonts](https://fonts.google.com) in .ttf format 
-2. Convert the `.ttf` to `.woff2` I used [Google's woff2](https://github.com/google/woff2). 
-3. Drag and drop converted font into trilium as a 
-4. Update its mime type in the document. To do this you'll need the font's noteID. Open the menu and choose `OPen SQL Console` or use `alt-O` and execute the following update statement:
+Fonts in trilium are stored in the .woff2 format and in the notes table in the document have a mime type of `'application/octet-stream'` rather than `'file/woff2'`. To define custom fonts trilium uses a [custom request handler](https://github.com/zadam/trilium/wiki/Custom-request-handler). These instruction are how I've found to get fonts to work.
+1. All the fonts I've used are avalible to download from the [google webfonts helper](https://google-webfonts-helper.herokuapp.com/fonts) in many formats including .woff2 
+2. Drag and drop converted font into trilium into a subfoder of your themes fonder called 'fonts'
+3. Update its mime type in the document. To do this you'll need the font's noteID. Open the menu and choose OPen SQL Console or use alt-O and execute the following update statement:
 ```SQL
 UPDATE notes SET mime='application/octet-stream' WHERE noteID='$noteID'; 
 ```
-5. Update the file's attributes in trilium to include 'customResourceProvider=fonts/$fontName'
+4. Update the file's attributes in trilium to include 'customResourceProvider=fonts/$fontName'
