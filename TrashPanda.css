@@ -57,9 +57,9 @@ body.theme-trash-panda {
 
 body a { color: var(--accent-1); }
 body a:hover { color: var(--accent-2); }
-body.theme-darkasher #note-detail-text {
+body.theme-trash-panda #note-detail-text {
     font-size: 75%; 
 }
-body.theme-darkasher .CodeMirror {
+body.theme-trash-panda .CodeMirror {
     filter: invert(100%) hue-rotate(180deg);
 }

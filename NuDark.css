@@ -5,15 +5,16 @@
  * You can read some details on theming here: http://github.com/zadam/trilium/wiki/Themes
  */
 
- :root {
-    --bg:        #2a363a;
-    --bg-accent: #262e31;
-    --main-text: #fcf2e9;
-    --muted-text:#707a8c;
-    --accent-1:  #e84a5f;
-    --accent-2:  #ff847d;
-    --accent-3:  #fecea8;
-    --btn-bg:    #99b898;
+:root {
+    --bg:         #1F2937;
+    --bg-accent:  #111827;
+    --main-text:  #E5E7EB;
+    --muted-text: #D1D5DB;
+    --accent-1:   #E5E7EB;
+    --accent-2:   #C4B5FD;
+    --accent-3:   #A5B4FC;
+    --accent-4:   #6EE7B7;
+    --btn-bg:     #1F2937;
 }
 
 @font-face { 
@@ -23,7 +24,7 @@
   src: url('/custom/fonts/fira-sans.woff2') format('woff2');
 }
 
-body.theme-darkasher {
+body.theme-nudark {
     --main-font-family: 'Fira Sans' !important;
     --main-font-size: normal;
     --tree-font-family: inherit;
@@ -34,32 +35,30 @@ body.theme-darkasher {
 
     --main-background-color: var(--bg);
     --main-text-color: var(--main-text);
-    --main-border-color: var(--main-text);
+    --main-border-color: var(--muted-text);
     --accented-background-color: var(--bg-accent);
     --more-accented-background-color: var(--btn-bg);
     --header-background-color: var(--bg-accent);
     --button-background-color: var(--btn-bg);
     --button-disabled-background-color: var(--bg);
     --button-border-color: var(--accent-3);
-    --button-text-color: var(--bg);
+    --button-text-color: var(--accent-4);
     --button-border-radius: 5px;
     --muted-text-color: var(--muted-text);
     --input-text-color: var(--main-text);
     --input-background-color: var(--bg);
     --modal-background-color: var(--bg);
     --hover-item-text-color: var(--bg-accent);
-    --hover-item-background-color: var(--accent-1);
+    --hover-item-background-color: var(--accent-3);
     --active-item-text-color: var(--bg-accent);
     --active-item-background-color: var(--accent-2);
-    --menu-text-color: var(--main-text);
+    --menu-text-color: var(--accent-4);
     --menu-background-color: var(--bg-accent);
 }
 
-body a { color: var(--accent-1); }
+body a { color: var(--accent-4); }
 body a:hover { color: var(--accent-2); }
-body.theme-darkasher #note-detail-text {
+body.theme-nudark #note-detail-text {
     font-size: 75%; 
 }
-body.theme-darkasher .CodeMirror {
-    filter: invert(100%) hue-rotate(180deg);
-}
+body.theme-nudark .CodeMirror { filter: invert(100%) hue-rotate(180deg); }
