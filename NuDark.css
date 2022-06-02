@@ -5,26 +5,25 @@
  * You can read some details on theming here: http://github.com/zadam/trilium/wiki/Themes
  */
 
+
+@font-face {
+    font-family: 'Fira Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/custom/fonts/fira-sans.woff2') format('woff2');
+}
+
 :root {
-    --bg:         #1F2937;
-    --bg-accent:  #111827;
-    --main-text:  #E5E7EB;
+    --bg: #1F2937;
+    --bg-accent: #111827;
+    --main-text: #E5E7EB;
     --muted-text: #D1D5DB;
-    --accent-1:   #E5E7EB;
-    --accent-2:   #C4B5FD;
-    --accent-3:   #A5B4FC;
-    --accent-4:   #6EE7B7;
-    --btn-bg:     #1F2937;
-}
+    --accent-1: #E5E7EB;
+    --accent-2: #C4B5FD;
+    --accent-3: #A5B4FC;
+    --accent-4: #6EE7B7;
+    --btn-bg: #1F2937;
 
-@font-face { 
-  font-family: 'Fira Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url('/custom/fonts/fira-sans.woff2') format('woff2');
-}
-
-body.theme-nudark {
     --main-font-family: 'Fira Sans' !important;
     --main-font-size: normal;
     --tree-font-family: inherit;
@@ -54,11 +53,28 @@ body.theme-nudark {
     --active-item-background-color: var(--accent-2);
     --menu-text-color: var(--accent-4);
     --menu-background-color: var(--bg-accent);
+
+
+
+    --left-pane-background-color: var(--bg-accent);
+    --left-pane-text-color: var(--main-text);
+
+    --launcher-pane-background-color: var(--bg);
+    --launcher-pane-text-color: var(--main-text);
 }
 
-body a { color: var(--accent-4); }
-body a:hover { color: var(--accent-2); }
-body.theme-nudark #note-detail-text {
-    font-size: 75%; 
+a {
+    color: var(--accent-4);
 }
-body.theme-nudark .CodeMirror { filter: invert(100%) hue-rotate(180deg); }
+
+a:hover {
+    color: var(--accent-2);
+}
+
+#note-detail-text {
+    font-size: 75%;
+}
+
+.CodeMirror {
+    filter: invert(100%) hue-rotate(180deg);
+}
