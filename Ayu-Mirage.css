@@ -5,58 +5,74 @@
  * You can read some details on theming here: http://github.com/zadam/trilium/wiki/Themes
  */
 
-@font-face { 
+ @font-face {
   font-family: 'Merriweather-Regular';
   font-style: normal;
   font-weight: 400;
   src: url('/custom/fonts/Merriweather.woff2') format('woff2');
 }
 
-@font-face { 
+@font-face {
   font-family: 'Roboto-Regular';
   font-style: normal;
   font-weight: 400;
   src: url('/custom/fonts/Roboto.woff2') format('woff2');
 }
 
-body.theme-ayu-mirage {
-    --main-font-family: 'Roboto-Regular' !important;
-    --main-font-size: normal;
-    --tree-font-family: inherit;
-    --tree-font-size: normal;
-    --detail-font-family: inherit;
-    --detail-font-size: normal;
-    --detail-text-font-family: 'Merriweather-Regular' !important;
+:root {
+  --main-font-family: 'Merriweather-Regular' !important;
+  --main-font-size: normal;
+  --tree-font-family: inherit;
+  --tree-font-size: normal;
+  --detail-font-family: inherit;
+  --detail-font-size: normal;
+  --detail-text-font-family: 'Merriweather-Regular' !important;
 
-    --main-background-color: #1f2430;
-    --main-text-color: #cbccc6;
-    --main-border-color: #cbccc6;
-    --accented-background-color: #191e2a;
-    --more-accented-background-color: #34455a;
-    --header-background-color: #191e2a;
-    --button-background-color: #34455a;
-    --button-disabled-background-color: #1f2430;
-    --button-border-color: #ffcc664d;
-    --button-text-color: #cbccc6;
-    --button-border-radius: 2px;
-    --muted-text-color: #707a8c;
-    --input-text-color: #cbccc6;
-    --input-background-color: #1f2430;
-    --modal-background-color: #1f2430;
-    --hover-item-text-color: #191e2a;
-    --hover-item-background-color: #a6cc70;
-    --active-item-text-color: #191e2a;
-    --active-item-background-color: #a6cc70;
-    --menu-text-color: #cbccc6;
-    --menu-background-color: #191e2a;
+  --bg: #1f2430;
+  --bg-accent: #191e2a;
+  --main-text: #cbccc6;
+  --muted-text: #D8EBA1;
+  --accent-1: #a6cc70;
+  --accent-2: #77a8d9;
+  --accent-3: #ffcc664d;
+  --btn-bg: #34455a;
+
+  --main-background-color: var(--bg);
+  --main-text-color: var(--main-text);
+  --main-border-color: var(--main-text);
+  --accented-background-color: var(--bg-accent);
+  --more-accented-background-color: var(--btn-bg);
+  --header-background-color: var(--bg-accent);
+  --launcher-pane-background-color: var(--bg);
+  --launcher-pane-text-color: var(--main-text);
+  --left-pane-background-color: var(--bg-accent);
+  --left-pane-text-color: var(--main-text);
+  --modal-background-color: var(--bg);
+  --modal-backdrop-color: black;
+  --menu-text-color: var(--main-text);
+  --menu-background-color: var(--bg-accent);
+  --button-background-color: var(--btn-bg);
+  --button-disabled-background-color: var(--bg);
+  --button-border-color: var(--accent-3);
+  --button-text-color: var(--muted-text);
+  --button-border-radius: 5px;
+  --input-text-color: var(--main-text);
+  --input-background-color: var(--bg);
+  --hover-item-text-color: var(--bg-accent);
+  --hover-item-background-color: var(--accent-1);
+  --active-item-text-color: var(--bg-accent);
+  --active-item-background-color: var(--accent-2);   
+  --tooltip-background-color: var(--bg-accent);
+  --link-color: var(--accent-1);;
+  --scrollbar-border-color: rgba(175, 184, 198, 0.5);
 }
 
-body a { color: #a6cc70; }
-body a:hover { color: #77a8d9; }
-body.theme-ayu-mirage #note-detail-text {
-    font-size: 75%; 
+a:hover { color: var(--accent-2); }
+
+#note-detail-text {
+  font-size: 75%; 
 }
 
-body.theme-ayu-mirage .CodeMirror {
-    filter: invert(100%) hue-rotate(180deg);
+.CodeMirror {
+  filter: invert(100%) hue-rotate(180deg);
 }
